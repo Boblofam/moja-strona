@@ -36,16 +36,25 @@
             margin-top: 30px;
         }
 
-        /* Styl dla obrazka kota w prawym dolnym rogu */
-        .funny-image {
+        /* Styl dla obrazków kota */
+        .funny-image,
+        .funny-image-left {
             position: fixed;
             bottom: 20px;
-            right: 20px;
             width: 120px;
             height: auto;
         }
 
-        .funny-image img {
+        .funny-image {
+            right: 20px;
+        }
+
+        .funny-image-left {
+            left: 20px;
+        }
+
+        .funny-image img,
+        .funny-image-left img {
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -73,6 +82,11 @@
     <!-- Obrazek kota w prawym dolnym rogu -->
     <div class="funny-image">
         <img src="https://i.imgur.com/Ycz0ILH.jpeg" alt="Zabawny kot" />
+    </div>
+
+    <!-- Drugi obrazek kota w lewym dolnym rogu -->
+    <div class="funny-image-left">
+        <img src="https://i.imgur.com/Ycz0ILH.jpeg" alt="Zabawny kot 2" />
     </div>
 </body>
 </html>
